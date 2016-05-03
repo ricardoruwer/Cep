@@ -4,39 +4,56 @@
 - Works well when **state** and **city** is `<input>` or `<select>` (with or without ajax).
 
 ## How to use
-First of all, include the .js file
+
+Create your form:
+
+```html
+<form id="form">
+  <input type="text" class="js-cep" placeholder="CEP">
+  <input type="text" class="js-street" placeholder="Logradouro">
+  <input type="text" class="js-complement" placeholder="Complemento">
+  <input type="text" class="js-neighborhood" placeholder="Bairro">
+  <input type="text" class="js-state" placeholder="Estado">
+  <input type="text" class="js-city" placeholder="Cidade">
+</form>
+```
+
+Include the .js file:
 
 ```html
 <script src="cepfill.js"></script>
 ```
 
-Then call the script:
-
-```javascript
-var cep = new Cep("#form");
-```
-
-## Options
-How to use:
+Call the script:
 
 ```html
 <script>
+  var cep = new Cep("#form");
+</script>
+```
+
+## Options
+
+How to use:
+
+```javascript
+//My Personal Options
 var options = {
-  cepInput: '.js-cep',
-  streetInput: ".js-street",
-  complementInput: ".js-complement",
-  neighborhoodInput: ".js-neighborhood",
-  stateInput: ".js-state",
-  cityInput: ".js-city",
+  cepInput:           ".js-cep", //default
+  streetInput:        ".js-street", //default
+  complementInput:    ".js-complement", //default
+  neighborhoodInput:  ".js-neighborhood", //default
+  stateInput:         ".js-state", //default
+  cityInput:          ".js-city", //default
   onError: function() {
     alert("That zip code doesn't exists!");
   },
 }
 
+//Call the Script
 var cep = new Cep("#form", options);
-</script>
 ```
 
-### Demo
+## Demo
 
 http://codepen.io/ricardoruwer/full/ONaYBb/
