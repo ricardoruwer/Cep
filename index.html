@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto-fill the address by the CEP.</title>
+</head>
+<body>
+
+    <form id="form">
+        <input type="text" class="js-cep" placeholder="CEP">
+        <input type="text" class="js-street" placeholder="Logradouro">
+        <input type="text" class="js-complement" placeholder="Complemento">
+        <input type="text" class="js-neighborhood" placeholder="Bairro">
+        <input type="text" class="js-state" placeholder="Estado">
+        <input type="text" class="js-city" placeholder="Cidade">
+    </form>
+
+    <script src="cepfill.js"></script>
+    <script>
+        var cep = new Cep("#form");
+    </script>
+
+</body>
+</html>
