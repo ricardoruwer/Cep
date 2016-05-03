@@ -48,6 +48,9 @@ var options = {
   onError: function() {
     alert("That zip code doesn't exists!");
   },
+  onSuccess: function() {
+    console.log("Zip code found!");
+  }
 }
 
 //Call the Script
@@ -56,4 +59,4 @@ var cep = new Cep("#form", options);
 
 ## Demo
 
-http://codepen.io/ricardoruwer/full/ONaYBb/
+<a href="http://codepen.io/ricardoruwer/full/ONaYBb/" target="_blank">codepen.io/ricardoruwer/full/ONaYBb</a>
