@@ -39,4 +39,4 @@ var cep = new Cep("#form", options);
 
 ### Demo
 
-The index.html file is a demo page.
+http://codepen.io/ricardoruwer/full/ONaYBb/
