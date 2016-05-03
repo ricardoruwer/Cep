@@ -87,7 +87,7 @@
         neighborhoodInput.value = this.response.bairro;
         stateInput.value = this.response.uf;
 
-        if (stateInput.tagName == "SELECT") {
+        if (cityInput.tagName == "SELECT") {
             this.fillCitiesForSelect();
         }
         else { // "INPUT"
